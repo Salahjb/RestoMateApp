@@ -1,37 +1,52 @@
+using RestoMate.Models;
 using RestoMate.Models.User;
-
-namespace RestoMate.Models;
 
 public class Order
 {
-    public int Id { get; set;  }
+    public int Id { get; set; }
 
-    public int TableNumber { get; set; }
-    
-    public string status { get; set; }
-    
+    public int TableId { get; set; }
+        
+    public Table Table { get; set; }
+        
+    public string Status { get; set; } // Pending, Preparing, Served, Paid
+        
     public List<OrderItem> Items { get; set; } = new List<OrderItem>();
-    
+        
     public decimal TotalAmount => Items.Sum(item => item.Subtotal);
-    
-    public int CustomerId { get; set; }       
-    
-    public DateTime Date { get; set; } 
-    
+        
+    public int? CustomerId { get; set; }
+        
     public Customer Customer { get; set; }
+        
+    public DateTime OrderDate { get; set; } = DateTime.Now;
+        
+    public DateTime? CompletedDate { get; set; }
+        
+    public string PaymentMethod { get; set; }
 }
 
 public class OrderItem
 {
+    public int Id { get; set; }
+        
+    public int OrderId { get; set; }
+        
+    public Order Order { get; set; }
+        
     public int DishId { get; set; }
-    
-    public string DishName { get; set; }
-    
+        
     public Dish Dish { get; set; }
-    
-    public int quantity { get; set; }
+        
+    public string DishName { get; set; }
+        
+    public int Quantity { get; set; }
+        
     public decimal UnitPrice { get; set; }
-    
-    public decimal Subtotal => quantity * UnitPrice;
-    
+        
+    public decimal Subtotal => Quantity * UnitPrice;
+        
+    public string SpecialInstructions { get; set; }
+        
+    public string Status { get; set; } // Ordered, Preparing, Ready, Served
 }

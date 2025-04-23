@@ -1056,3 +1056,4 @@
 /home/salah/RiderProjects/RestoMateApp/RestoMateApp/obj/Debug/net8.0-android/stamp/_GenerateJavaStubs.stamp
 /home/salah/RiderProjects/RestoMateApp/RestoMateApp/obj/Debug/net8.0-android/stamp/_GeneratePackageManagerJava.stamp
 /home/salah/RiderProjects/RestoMateApp/RestoMateApp/obj/Debug/net8.0-android/stamp/_ResolveLibraryProjectImports.stamp
+/home/salah/RiderProjects/RestoMateApp/RestoMateApp/obj/Debug/net8.0-android/RestoMateApp.sourcelink.json
