@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
 using Microsoft.EntityFrameworkCore;
-using RestoMate.Data;
+using RestoMateApp.Data;
 
 namespace RestoMateApp;
 
