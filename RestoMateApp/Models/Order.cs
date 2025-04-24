@@ -13,7 +13,7 @@ public class Order
         
     public List<OrderItem> Items { get; set; } = new List<OrderItem>();
         
-    public decimal TotalAmount => Items.Sum(item => item.Subtotal);
+    public double TotalAmount => Items.Sum(item => item.Subtotal);
         
     public int? CustomerId { get; set; }
         
@@ -42,9 +42,9 @@ public class OrderItem
         
     public int Quantity { get; set; }
         
-    public decimal UnitPrice { get; set; }
+    public double UnitPrice { get; set; }
         
-    public decimal Subtotal => Quantity * UnitPrice;
+    public double Subtotal => Quantity * UnitPrice;
         
     public string SpecialInstructions { get; set; }
         
