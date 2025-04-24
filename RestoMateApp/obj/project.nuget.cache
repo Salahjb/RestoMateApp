@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "XBdz2C+kWMM=",
+  "dgSpecHash": "XKUK3gBJ2Ko=",
   "success": true,
   "projectFilePath": "/home/salah/RiderProjects/RestoMateApp/RestoMateApp/RestoMateApp.csproj",
   "expectedPackageFiles": [
     "/home/salah/.nuget/packages/bcrypt.net-next/4.0.3/bcrypt.net-next.4.0.3.nupkg.sha512",
+    "/home/salah/.nuget/packages/communitytoolkit.maui/8.0.0/communitytoolkit.maui.8.0.0.nupkg.sha512",
+    "/home/salah/.nuget/packages/communitytoolkit.maui.core/8.0.0/communitytoolkit.maui.core.8.0.0.nupkg.sha512",
     "/home/salah/.nuget/packages/googlegson/2.10.1.4/googlegson.2.10.1.4.nupkg.sha512",
     "/home/salah/.nuget/packages/microsoft.data.sqlite.core/8.0.4/microsoft.data.sqlite.core.8.0.4.nupkg.sha512",
     "/home/salah/.nuget/packages/microsoft.entityframeworkcore/8.0.4/microsoft.entityframeworkcore.8.0.4.nupkg.sha512",

@@ -15,6 +15,41 @@
           }
         }
       },
+      "CommunityToolkit.Maui/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "8.0.0",
+          "Microsoft.Maui.Controls": "8.0.14",
+          "Microsoft.Maui.Controls.Compatibility": "8.0.14"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.14",
+          "Microsoft.Maui.Essentials": "8.0.14"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "GoogleGson/2.10.1.4": {
         "type": "package",
         "compile": {
@@ -2570,6 +2605,41 @@
           }
         }
       },
+      "CommunityToolkit.Maui/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "8.0.0",
+          "Microsoft.Maui.Controls": "8.0.14",
+          "Microsoft.Maui.Controls.Compatibility": "8.0.14"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.14",
+          "Microsoft.Maui.Essentials": "8.0.14"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "GoogleGson/2.10.1.4": {
         "type": "package",
         "compile": {
@@ -5115,6 +5185,41 @@
         },
         "runtime": {
           "lib/net6.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "8.0.0",
+          "Microsoft.Maui.Controls": "8.0.14",
+          "Microsoft.Maui.Controls.Compatibility": "8.0.14"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.14",
+          "Microsoft.Maui.Essentials": "8.0.14"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
             "related": ".xml"
           }
         }
@@ -7668,6 +7773,41 @@
           }
         }
       },
+      "CommunityToolkit.Maui/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "8.0.0",
+          "Microsoft.Maui.Controls": "8.0.14",
+          "Microsoft.Maui.Controls.Compatibility": "8.0.14"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.14",
+          "Microsoft.Maui.Essentials": "8.0.14"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "GoogleGson/2.10.1.4": {
         "type": "package",
         "compile": {
@@ -10213,6 +10353,41 @@
         },
         "runtime": {
           "lib/net6.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "8.0.0",
+          "Microsoft.Maui.Controls": "8.0.14",
+          "Microsoft.Maui.Controls.Compatibility": "8.0.14"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.14",
+          "Microsoft.Maui.Essentials": "8.0.14"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
             "related": ".xml"
           }
         }
@@ -12783,6 +12958,59 @@
         "lib/netstandard2.1/BCrypt.Net-Next.dll",
         "lib/netstandard2.1/BCrypt.Net-Next.xml",
         "readme.md"
+      ]
+    },
+    "CommunityToolkit.Maui/8.0.0": {
+      "sha512": "GO8x688KPm76UWLSqYElw510+GQF7zO9FU8RillE1hn0kySdBPUZNbwx1tWnBoJZSLJwxKUEONhHsMVIMsEXyw==",
+      "type": "package",
+      "path": "communitytoolkit.maui/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ReadMe.txt",
+        "analyzers/dotnet/cs/CommunityToolkit.Maui.Analyzers.CodeFixes.dll",
+        "analyzers/dotnet/cs/CommunityToolkit.Maui.Analyzers.dll",
+        "analyzers/dotnet/cs/CommunityToolkit.Maui.SourceGenerators.dll",
+        "communitytoolkit.maui.8.0.0.nupkg.sha512",
+        "communitytoolkit.maui.nuspec",
+        "icon.png",
+        "lib/net8.0-android34.0/CommunityToolkit.Maui.dll",
+        "lib/net8.0-android34.0/CommunityToolkit.Maui.xml",
+        "lib/net8.0-ios17.2/CommunityToolkit.Maui.dll",
+        "lib/net8.0-ios17.2/CommunityToolkit.Maui.xml",
+        "lib/net8.0-maccatalyst17.2/CommunityToolkit.Maui.dll",
+        "lib/net8.0-maccatalyst17.2/CommunityToolkit.Maui.xml",
+        "lib/net8.0-tizen8.0/CommunityToolkit.Maui.dll",
+        "lib/net8.0-tizen8.0/CommunityToolkit.Maui.xml",
+        "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.dll",
+        "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.xml",
+        "lib/net8.0/CommunityToolkit.Maui.dll",
+        "lib/net8.0/CommunityToolkit.Maui.xml"
+      ]
+    },
+    "CommunityToolkit.Maui.Core/8.0.0": {
+      "sha512": "pGMqh2cm82CDcEnzXqxjKOCIFRg28ilCPevm36eEBnZAjGmBG9lK0r7zf11aOFwMvIt44LNONAoQb+1jmjTQzg==",
+      "type": "package",
+      "path": "communitytoolkit.maui.core/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ReadMe.txt",
+        "communitytoolkit.maui.core.8.0.0.nupkg.sha512",
+        "communitytoolkit.maui.core.nuspec",
+        "icon.png",
+        "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll",
+        "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.xml",
+        "lib/net8.0-ios17.2/CommunityToolkit.Maui.Core.dll",
+        "lib/net8.0-ios17.2/CommunityToolkit.Maui.Core.xml",
+        "lib/net8.0-maccatalyst17.2/CommunityToolkit.Maui.Core.dll",
+        "lib/net8.0-maccatalyst17.2/CommunityToolkit.Maui.Core.xml",
+        "lib/net8.0-tizen8.0/CommunityToolkit.Maui.Core.dll",
+        "lib/net8.0-tizen8.0/CommunityToolkit.Maui.Core.xml",
+        "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll",
+        "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.Core.xml",
+        "lib/net8.0/CommunityToolkit.Maui.Core.dll",
+        "lib/net8.0/CommunityToolkit.Maui.Core.xml"
       ]
     },
     "GoogleGson/2.10.1.4": {
@@ -16641,6 +16869,7 @@
   "projectFileDependencyGroups": {
     "net8.0-android34.0": [
       "BCrypt.Net-Next >= 4.0.3",
+      "CommunityToolkit.Maui >= 8.0.0",
       "Microsoft.EntityFrameworkCore >= 8.0.4",
       "Microsoft.EntityFrameworkCore.Sqlite >= 8.0.4",
       "Microsoft.Extensions.Logging.Debug >= 8.0.1",
@@ -16698,6 +16927,10 @@
           "BCrypt.Net-Next": {
             "target": "Package",
             "version": "[4.0.3, )"
+          },
+          "CommunityToolkit.Maui": {
+            "target": "Package",
+            "version": "[8.0.0, )"
           },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",

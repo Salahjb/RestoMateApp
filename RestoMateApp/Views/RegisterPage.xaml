@@ -1,0 +1,69 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:RestoMateApp.ViewModels"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="RestoMateApp.Views.RegisterPage"
+             x:DataType="vm:RegisterViewModel"
+             Title="{Binding Title}">
+
+    <!-- Define Converters from MAUI Community Toolkit -->
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <toolkit:IsStringNullOrEmptyConverter x:Key="StringNullOrEmptyBoolConverter" />
+            <toolkit:InvertedBoolConverter x:Key="InvertedBoolConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,10"
+            Spacing="10">
+
+            <Label
+                Text="Create Your Account"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                Margin="0,0,0,20"/>
+
+            <Entry Placeholder="Username *" Text="{Binding Username}" />
+            <Entry Placeholder="Email (Optional)" Text="{Binding Email}" Keyboard="Email" />
+            <Entry Placeholder="Phone Number *" Text="{Binding PhoneNumber}" Keyboard="Telephone" />
+            <Entry Placeholder="Password *" Text="{Binding Password}" IsPassword="True" />
+            <Entry Placeholder="Confirm Password *" Text="{Binding ConfirmPassword}" IsPassword="True" />
+
+            <!-- Error Message Display: Uses IsNullOrEmptyConverter via DataTriggers -->
+             <Label Text="{Binding ErrorMessage}" TextColor="Red" HorizontalOptions="Start" Margin="0,5,0,5">
+                <Label.Triggers>
+                    <!-- Hide when ErrorMessage IS null or empty (Converter returns True) -->
+                    <DataTrigger TargetType="Label" Binding="{Binding ErrorMessage, Converter={StaticResource StringNullOrEmptyBoolConverter}}" Value="True">
+                        <Setter Property="IsVisible" Value="False" />
+                    </DataTrigger>
+                     <!-- Show when ErrorMessage IS NOT null or empty (Converter returns False) -->
+                     <DataTrigger TargetType="Label" Binding="{Binding ErrorMessage, Converter={StaticResource StringNullOrEmptyBoolConverter}}" Value="False">
+                        <Setter Property="IsVisible" Value="True" />
+                    </DataTrigger>
+                </Label.Triggers>
+            </Label>
+
+            <ActivityIndicator IsVisible="{Binding IsBusy}" IsRunning="{Binding IsBusy}" HorizontalOptions="Center" />
+
+            <Button
+                Text="Register"
+                Command="{Binding RegisterCommand}"
+                IsEnabled="{Binding IsBusy, Converter={StaticResource InvertedBoolConverter}}"
+                HorizontalOptions="FillAndExpand"
+                Margin="0,20,0,0"/>
+
+            <Button
+                Text="Cancel"
+                Command="{Binding CancelCommand}"
+                HorizontalOptions="Center"
+                BackgroundColor="Transparent"
+                TextColor="{AppThemeBinding Light={StaticResource Gray600}, Dark={StaticResource Gray300}}"
+                BorderWidth="0"
+                FontSize="Small"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -4,6 +4,8 @@ public class MonoPackageManager_Resources {
 		/* We need to ensure that "RestoMateApp.dll" comes first in this list. */
 		"RestoMateApp.dll",
 		"BCrypt.Net-Next.dll",
+		"CommunityToolkit.Maui.dll",
+		"CommunityToolkit.Maui.Core.dll",
 		"GoogleGson.dll",
 		"Microsoft.Data.Sqlite.dll",
 		"Microsoft.EntityFrameworkCore.dll",

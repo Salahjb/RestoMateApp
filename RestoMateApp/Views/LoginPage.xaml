@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:RestoMateApp.ViewModels"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit" 
+             x:Class="RestoMateApp.Views.LoginPage"
+             x:DataType="vm:LoginViewModel"
+             Title="{Binding Title}"
+             Shell.NavBarIsVisible="False">
+
+    <!-- Define Converters from MAUI Community Toolkit -->
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <toolkit:IsStringNullOrEmptyConverter x:Key="StringNullOrEmptyBoolConverter" />
+            <toolkit:InvertedBoolConverter x:Key="InvertedBoolConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="15"
+            VerticalOptions="Center">
+
+            <Label
+                Text="RestoMate Login"
+                FontSize="Header"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                Margin="0,0,0,40"/>
+
+            <Frame Padding="10" CornerRadius="10" BorderColor="LightGray" HasShadow="True">
+                <VerticalStackLayout Spacing="10">
+                    <Entry
+                        Placeholder="Username"
+                        Text="{Binding Username}"
+                        ReturnType="Next"
+                        Keyboard="Plain" />
+
+                    <Entry
+                        Placeholder="Password"
+                        Text="{Binding Password}"
+                        IsPassword="True"
+                        ReturnType="Done"
+                        ReturnCommand="{Binding LoginCommand}"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Error Message Display: Uses IsNullOrEmptyConverter via DataTriggers -->
+            <Label Text="{Binding ErrorMessage}" TextColor="Red" HorizontalOptions="Center" Margin="0,10,0,0">
+                <Label.Triggers>
+                    <!-- Hide when ErrorMessage IS null or empty (Converter returns True) -->
+                    <DataTrigger TargetType="Label" Binding="{Binding ErrorMessage, Converter={StaticResource StringNullOrEmptyBoolConverter}}" Value="True">
+                        <Setter Property="IsVisible" Value="False" />
+                    </DataTrigger>
+                     <!-- Show when ErrorMessage IS NOT null or empty (Converter returns False) -->
+                     <DataTrigger TargetType="Label" Binding="{Binding ErrorMessage, Converter={StaticResource StringNullOrEmptyBoolConverter}}" Value="False">
+                        <Setter Property="IsVisible" Value="True" />
+                    </DataTrigger>
+                </Label.Triggers>
+            </Label>
+
+            <ActivityIndicator IsVisible="{Binding IsBusy}" IsRunning="{Binding IsBusy}" HorizontalOptions="Center" Margin="0,10,0,0"/>
+
+            <Button
+                Text="Login"
+                Command="{Binding LoginCommand}"
+                IsEnabled="{Binding IsBusy, Converter={StaticResource InvertedBoolConverter}}"
+                HorizontalOptions="Fill"
+                Margin="0,20,0,0"
+                HeightRequest="50"
+                CornerRadius="25"/>
+
+            <Button
+                Text="Don't have an account? Register"
+                Command="{Binding RegisterCommand}"
+                HorizontalOptions="Center"
+                BackgroundColor="Transparent"
+                TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource White}}"
+                BorderWidth="0"
+                FontSize="Small"
+                Margin="0,10,0,0"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

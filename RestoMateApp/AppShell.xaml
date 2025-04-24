@@ -4,12 +4,38 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:RestoMateApp"
-    Shell.FlyoutBehavior="Disabled"
-    Title="RestoMateApp">
+    xmlns:views="clr-namespace:RestoMateApp.Views"  
+    Shell.FlyoutBehavior="Disabled" 
+    Shell.NavBarIsVisible="False">
+    <!-- Set NavBarIsVisible to False on the Shell if you don't want -->
+    <!-- any navigation bar on the Login/Register pages themselves -->
 
+    <!-- Initial Page is LoginPage -->
     <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+        Title="Login"
+        ContentTemplate="{DataTemplate views:LoginPage}"
+        Route="LoginPage" /> <!-- Route is important for navigation -->
+
+    <!-- Define placeholders for post-login navigation -->
+    <!-- These routes match the GoToAsync calls in your LoginViewModel -->
+    <!-- FlyoutItemIsVisible="False" hides them until needed/enabled -->
+
+    <!-- <FlyoutItem Title="Customer" Route="CustomerSection" FlyoutItemIsVisible="False"> -->
+    <!--     <ShellContent Title="Dashboard" Route="CustomerDashboard" -->
+    <!--                   ContentTemplate="{DataTemplate views:CustomerDashboardPage}" /> -->
+    <!--     ~1~ Add other customer pages inside this FlyoutItem if needed @1@ -->
+    <!-- </FlyoutItem> -->
+
+    <!-- <FlyoutItem Title="Staff" Route="StaffSection" FlyoutItemIsVisible="False"> -->
+    <!--     <ShellContent Title="Dashboard" Route="StaffDashboard" -->
+    <!--                   ContentTemplate="{DataTemplate views:StaffDashboardPage}" /> -->
+    <!--     ~1~ Add other staff pages @1@ -->
+    <!-- </FlyoutItem> -->
+
+    <!-- <FlyoutItem Title="Admin" Route="AdminSection" FlyoutItemIsVisible="False"> -->
+    <!--     <ShellContent Title="Dashboard" Route="AdminDashboard" -->
+    <!--                   ContentTemplate="{DataTemplate views:AdminDashboardPage}" /> -->
+    <!--     ~1~ Add other admin pages @1@ -->
+    <!-- </FlyoutItem> -->
 
 </Shell>

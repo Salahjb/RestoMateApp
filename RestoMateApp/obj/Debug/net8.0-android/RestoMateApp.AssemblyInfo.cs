@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RestoMateApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+2c5a908023e31c141a5445396bcfacbd1af1fede")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+6ee5f61edcb86f9423b2aaebb4ec3813e2bc1c6d")]
 [assembly: System.Reflection.AssemblyProductAttribute("RestoMateApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RestoMateApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

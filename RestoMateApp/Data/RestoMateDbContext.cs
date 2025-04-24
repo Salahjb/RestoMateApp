@@ -81,7 +81,8 @@ namespace RestoMateApp.Data
                     Description = "Beef patty with lettuce, tomato, and cheese", 
                     Price = 9.99, 
                     Category = "Main Course",
-                    IsAvailable = true
+                    IsAvailable = true,
+                    ImagePath = "dotnet_bot.png"
                 },
                 new Dish 
                 { 
@@ -90,7 +91,8 @@ namespace RestoMateApp.Data
                     Description = "Romaine lettuce with Caesar dressing and croutons", 
                     Price = 7.99, 
                     Category = "Starter",
-                    IsAvailable = true
+                    IsAvailable = true,
+                    ImagePath = "dotnet_bot.png"
                 },
                 new Dish 
                 { 
@@ -99,7 +101,8 @@ namespace RestoMateApp.Data
                     Description = "Rich chocolate cake with ganache", 
                     Price = 5.99, 
                     Category = "Dessert",
-                    IsAvailable = true
+                    IsAvailable = true,
+                    ImagePath = "dotnet_bot.png" 
                 }
             );
             

@@ -1,4 +1,6 @@
 using System.ComponentModel.DataAnnotations;
+using System.Runtime.CompilerServices;
+using Javax.Annotation;
 
 namespace RestoMate.Models;
 
@@ -18,7 +20,7 @@ public class Dish
         
     public bool IsAvailable { get; set; } = true;
         
-    public string ImagePath { get; set; }
+    public string? ImagePath { get; set; }
         
     public List<OrderItem> OrderItems { get; set; } = new List<OrderItem>();
 }

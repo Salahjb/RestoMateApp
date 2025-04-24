@@ -45,3 +45,15 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = RestoMateApp.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Styles.xaml
+
+[/home/salah/RiderProjects/RestoMateApp/RestoMateApp/Views/LoginPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = RestoMateApp.Views.LoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/LoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/LoginPage.xaml
+
+[/home/salah/RiderProjects/RestoMateApp/RestoMateApp/Views/RegisterPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = RestoMateApp.Views.RegisterPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/RegisterPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/RegisterPage.xaml

@@ -1,8 +1,12 @@
 ﻿using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;      // Already here
 using Npgsql.EntityFrameworkCore.PostgreSQL; // <-- Add Npgsql provider namespace
-using RestoMateApp.Data;                  // Your DbContext namespace
-//using RestoMateApp.Services;              // Your Services namespace
+using RestoMateApp.Data;             
+//using RestoMateApp.Services;
+using CommunityToolkit.Maui;
+using RestoMateApp.Services;
+using RestoMateApp.ViewModels;
+using RestoMateApp.Views;
 
 namespace RestoMateApp;
 
@@ -13,6 +17,7 @@ public static class MauiProgram
         var builder = MauiApp.CreateBuilder();
         builder
             .UseMauiApp<App>()
+            .UseMauiCommunityToolkit()
             .ConfigureFonts(fonts =>
             {
                 fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
@@ -45,6 +50,12 @@ public static class MauiProgram
                    // .EnableDetailedErrors()
                    // #endif
         );
+        
+        builder.Services.AddSingleton<IAuthService, AuthService>();
+        builder.Services.AddTransient<LoginViewModel>();
+        builder.Services.AddTransient<RegisterViewModel>();
+        builder.Services.AddTransient<LoginPage>();
+        builder.Services.AddTransient<RegisterPage>();
 
 
         // Register your application services that use the DbContext
